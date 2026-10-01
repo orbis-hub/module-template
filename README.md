@@ -49,7 +49,7 @@ dist/              build output (gitignored)
 
 ### client (`@orbis/sdk/client`)
 
-`defineClient({ widgets, pages, settings?, widgetConfig? })`. widgets receive `{ instance, config, size, editing }`. hooks: `useModuleApi()`, `useModuleQuery(path, { refetchOn, intervalMs })`, `useModuleEvents(name, cb)`, `useModuleSettings()`, `useModuleDevices()`. ui components come from `@orbis/ui` (`Window`, `Button`, `Icon`, `Input`, `Chip`, …) and match the app's look.
+`defineClient({ widgets, pages, settings?, widgetConfig? })`. widgets receive `{ instance, config, size, editing }`. hooks: `useModuleApi()`, `useModuleQuery(path, { refetchOn, intervalMs })`, `useModuleEvents(name, cb)`, `useModuleSettings()`, `useModuleDevices()`. ui components come from `@orbis/ui` (`Window`, `Button`, `Icon`, `Input`, `Chip`, …) and match the app's look. icons too: `<Icon name="calendar" />` (190+ pixelarticons, `iconNames()` lists them) and `<WeatherIcon name="rain" />` plus `describeWmo(code, isDay)` for weather codes. they are provided by the host, so they cost your bundle nothing.
 
 react, react-dom, `@orbis/sdk/client` and `@orbis/ui` are **not bundled**: the host provides them at runtime, so there is one react instance and your bundle stays small.
 
