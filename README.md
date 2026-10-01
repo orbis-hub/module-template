@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/orbis-hub/orbis/main/brand/logo-dark.svg" alt="" width="64"></p>
+
 # orbis module template
 
 a complete, working [orbis](https://github.com/orbis-hub/orbis) module: one widget (a hub-side counter that syncs to every client), one page, module settings. copy it, rename it, replace the counter with your thing.
