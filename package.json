@@ -1,0 +1,24 @@
+{
+  "name": "orbis-module-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Template for an Orbis module. Rename id/name in module.json, then build.",
+  "scripts": {
+    "build": "orbis-module build",
+    "watch": "orbis-module watch",
+    "dev": "orbis-module watch --dev=../orbis/apps/hub/data",
+    "typecheck": "tsc --noEmit",
+    "pack:module": "orbis-module pack"
+  },
+  "devDependencies": {
+    "@orbis/module-tools": "github:orbis-hub/orbis#path:/packages/module-tools",
+    "@orbis/sdk": "github:orbis-hub/orbis#path:/packages/sdk",
+    "@orbis/ui": "github:orbis-hub/orbis#path:/packages/ui",
+    "@types/react": "^19.0.0",
+    "hono": "^4.7.0",
+    "react": "^19.0.0",
+    "typescript": "^5.9.0",
+    "zod": "^4.0.0"
+  }
+}
