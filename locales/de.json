@@ -1,0 +1,35 @@
+{
+  "manifest.name": "Mein Modul",
+  "manifest.description": "Was dieses Modul macht, in einem Satz.",
+  "widget.counter.name": "Zähler",
+  "widget.counter.description": "Ein Zähler, der auf dem Hub lebt und mit jedem Gerät synchron ist.",
+  "page.main.name": "Mein Modul",
+
+  "greeting.default": "hallo",
+  "counter.defaultLabel": "klicks",
+  "counter.add": "{step} dazu",
+  "counter.loading": "lädt…",
+
+  "page.counter.title": "zähler",
+  "page.counter.text": "der zähler steht bei {value}. er lebt auf dem hub, jedes gerät sieht dieselbe zahl.",
+  "page.counter.hub": "läuft auf {hub}",
+  "page.add": "+1",
+  "page.reset": "zurücksetzen",
+  "page.settings.title": "einstellungen",
+  "page.settings.greeting": "gruß aus den modul-einstellungen: {greeting}. admins ändern ihn unter module → einstellungen.",
+  "page.settings.milestone": { "one": "du bekommst nach jedem klick eine benachrichtigung.", "other": "du bekommst alle {count} klicks eine benachrichtigung." },
+
+  "reset.title": "zähler zurücksetzen?",
+  "reset.body": "das setzt den zähler für alle auf diesem hub auf 0.",
+  "reset.cancel": "abbrechen",
+  "reset.confirm": "zurücksetzen",
+
+  "notify.milestone": { "one": "{count} klick erreicht", "other": "{count} klicks erreicht" },
+
+  "eink.tap": "tippen für +1",
+  "eink.added": "+1",
+
+  "error.load": "zähler konnte nicht geladen werden",
+  "error.save": "das hat nicht geklappt, versuch's nochmal",
+  "error.adminOnly": "nur admins können den zähler zurücksetzen"
+}

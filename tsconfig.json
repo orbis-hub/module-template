@@ -11,7 +11,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "noUncheckedIndexedAccess": true,
-    "types": []
+    "types": ["node"]
   },
   "include": ["src"]
 }
