@@ -1,0 +1,35 @@
+{
+  "manifest.name": "My Module",
+  "manifest.description": "What this module does, in one sentence.",
+  "widget.counter.name": "Counter",
+  "widget.counter.description": "A counter that lives on the hub and syncs to every client.",
+  "page.main.name": "My Module",
+
+  "greeting.default": "hello",
+  "counter.defaultLabel": "clicks",
+  "counter.add": "add {step}",
+  "counter.loading": "loading…",
+
+  "page.counter.title": "counter",
+  "page.counter.text": "the counter is at {value}. it lives on the hub, so every device sees the same number.",
+  "page.counter.hub": "running on {hub}",
+  "page.add": "+1",
+  "page.reset": "reset",
+  "page.settings.title": "settings",
+  "page.settings.greeting": "greeting from the module settings: {greeting}. admins change it under modules → settings.",
+  "page.settings.milestone": { "one": "you get a notification after every click.", "other": "you get a notification every {count} clicks." },
+
+  "reset.title": "reset the counter?",
+  "reset.body": "this sets the counter back to 0 for everyone on this hub.",
+  "reset.cancel": "cancel",
+  "reset.confirm": "reset",
+
+  "notify.milestone": { "one": "{count} click reached", "other": "{count} clicks reached" },
+
+  "eink.tap": "tap to add one",
+  "eink.added": "+1",
+
+  "error.load": "could not load the counter",
+  "error.save": "that did not work, try again",
+  "error.adminOnly": "only admins can reset the counter"
+}

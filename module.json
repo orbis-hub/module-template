@@ -6,8 +6,10 @@
   "author": "your name",
   "repo": "github:your-user/orbis-module-my-module",
   "icon": "sparkles",
-  "minHub": "0.1.0",
+  "minHub": "0.2.0",
   "entry": { "server": "dist/server.js", "client": "dist/client.js" },
+  "languages": ["en", "de"],
+  "eink": true,
   "widgets": [
     {
       "id": "counter",
@@ -18,8 +20,8 @@
       "configSchema": {
         "type": "object",
         "properties": {
-          "label": { "type": "string", "title": "Label", "default": "clicks" },
-          "step": { "type": "integer", "title": "Step", "default": 1, "minimum": 1 }
+          "label": { "type": "string", "title": "Label", "maxLength": 40 },
+          "step": { "type": "integer", "title": "Step", "default": 1, "minimum": 1, "maximum": 100 }
         }
       }
     }
@@ -28,8 +30,10 @@
   "settingsSchema": {
     "type": "object",
     "properties": {
-      "greeting": { "type": "string", "title": "Greeting", "default": "hello" }
+      "greeting": { "type": "string", "title": "Greeting", "maxLength": 40 },
+      "milestone": { "type": "integer", "title": "Notify every n clicks", "default": 100, "minimum": 10, "maximum": 100000 },
+      "apiToken": { "type": "string", "title": "API token (example secret)", "format": "secret", "description": "only admins can read it back" }
     }
   },
-  "permissions": ["storage"]
+  "permissions": ["storage", "settings:read", "notifications"]
 }
